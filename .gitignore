@@ -1,0 +1,15 @@
+# Python virtual environments
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+# Local downloaded model weights
+.cache/
+hf_cache/
+# Generated scratch
+.DS_Store

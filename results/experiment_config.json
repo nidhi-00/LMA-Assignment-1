@@ -1,0 +1,19 @@
+{
+  "pdf": "fide_laws_2023.pdf",
+  "source_url": "https://chess.hu/wp-content/uploads/2026/01/Laws_of_Chess_FIDE.pdf",
+  "source_handbook": "https://handbook.fide.com/chapter/E012023",
+  "pdf_page_count": 41,
+  "chunks": 91,
+  "chunk_words": 170,
+  "chunk_overlap_words": 40,
+  "bi_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "cross_encoder": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "gemini_model": "gemini-3.8-flash",
+  "top_k": 10,
+  "context_k": 3,
+  "device": "cpu",
+  "python": "3.14.0",
+  "os": "Windows-11-10.0.26200-SP0",
+  "cpu_threads": 4,
+  "repetitions": 5
+}

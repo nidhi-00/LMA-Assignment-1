@@ -1,0 +1,4 @@
+query_id,category,question,chunk_id,pdf_page,baseline_rank,reranked_rank,rank_gain,cosine_score,cross_score,entered_top3_from_4to10,evidence_reason
+Q02,exception,Does a position appearing three times automatically make the game a draw?,P17_C03,17,6,1,5,0.4790346324443817,2.7350425720214844,True,Article 9.6.1 distinguishes an automatic draw after five occurrences from a claimable draw after three occurrences.
+Q14,negation,Is a mobile phone allowed in the playing venue during a game?,P20_C02,20,4,1,3,0.402056485414505,3.7836618423461914,True,Article 12.8 restricts mobile phone and communication device use by anybody in the playing venue unless authorised by the arbiter.
+Q23,keyword_trap,Can a player claim a draw because of a repeated position with different moves?,P17_C01,17,5,1,4,0.527441143989563,5.3508195877075195,True,"Article 9.2.3 explains when positions count as identical, including side to move, possible moves, castling rights, and en passant."

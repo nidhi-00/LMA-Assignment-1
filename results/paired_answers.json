@@ -1,0 +1,65 @@
+{
+  "Q02": {
+    "question": "Does a position appearing three times automatically make the game a draw?",
+    "category": "exception",
+    "critical_chunk_id": "P17_C03",
+    "evidence_reason": "Article 9.6.1 distinguishes an automatic draw after five occurrences from a claimable draw after three occurrences.",
+    "model": "gemini-3.8-flash",
+    "baseline_chunk_ids": [
+      "P16_C03",
+      "P16_C02",
+      "P17_C02"
+    ],
+    "reranked_chunk_ids": [
+      "P17_C03",
+      "P17_C01",
+      "P16_C03"
+    ],
+    "baseline_answer": "Based on the provided passages, **no**, a position appearing three times does not automatically make the game a draw. \n\nInstead, under Article 9.2, the game is drawn **upon a correct claim by a player having the move** when the same position appears (or is about to appear) for at least the third time [Chunk P16_C03, PDF page 16]. \n\nRelevant constraints and rules regarding this claim include:\n* If the position is about to appear, the player having the move must first indicate their unchangeable move (by writing it on the paper scoresheet or entering it on the electronic scoresheet) and declare their intention to make this move to the arbiter [Chunk P16_C03, PDF page 16].\n* A claim of a draw under Article 9.2 is also considered an offer of a draw [Chunk P16_C03, PDF page 16].\n* If a player touches a piece as in Article 4.3, they lose the right to claim a draw under Article 9.2 on that move [Chunk P17_C02, PDF page 17].\n* The player or arbiter pauses the clock during a claim; if found correct, the game is immediately drawn, but if incorrect, the claim cannot be withdrawn and the arbiter adds two minutes to the opponent's remaining thinking time [Chunk P17_C02, PDF page 17].\n\n*(Note: The provided text cuts off at Article 9.2.1 and does not include the subsequent subsections of 9.2 regarding positions that have already appeared).*",
+    "reranked_answer": "No, a position appearing three times does not automatically make the game a draw. \n\nAccording to the rules:\n* The game is drawn **upon a correct claim by a player having the move** when the same position has just appeared or is about to appear for at least the third time [Chunk P16_C03 | PDF page 16], [Chunk P17_C01 | PDF page 17], [Chunk P17_C03 | PDF page 17]. \n* For the game to be drawn automatically due to repetition (without requiring a player's claim), the same position must have appeared **at least five times** [Chunk P17_C03 | PDF page 17].",
+    "llm_baseline_s": 7.028745199961122,
+    "llm_reranked_s": 2.5591800000402145
+  },
+  "Q14": {
+    "question": "Is a mobile phone allowed in the playing venue during a game?",
+    "category": "negation",
+    "critical_chunk_id": "P20_C02",
+    "evidence_reason": "Article 12.8 restricts mobile phone and communication device use by anybody in the playing venue unless authorised by the arbiter.",
+    "model": "gemini-3.8-flash",
+    "baseline_chunk_ids": [
+      "P18_C03",
+      "P18_C02",
+      "P18_C01"
+    ],
+    "reranked_chunk_ids": [
+      "P20_C02",
+      "P18_C03",
+      "P18_C02"
+    ],
+    "baseline_answer": "Generally, no. During a game, a player is forbidden to have any electronic device (including a mobile phone) in the playing venue unless it is specifically approved by the arbiter [Chunk P18_C02, Chunk P18_C03 | PDF page 18]. \n\nHowever, there is an exception:\n* The regulations of an event may allow electronic devices to be stored in a player’s bag, provided the device is completely switched off, the bag is placed as agreed with the arbiter, and the bag is not used by either player without the arbiter's permission [Chunk P18_C03 | PDF page 18].\n\n**Constraint/Penalty:** If it is evident that a player has such a device on their person in the playing venue, the player loses the game and the opponent wins, unless event regulations specify a different, less severe penalty [Chunk P18_C03 | PDF page 18].\n\n*(Note: The provided text explicitly covers rules for players having \"any electronic device\"; it does not provide rules specifically naming mobile phones or addressing non-players in the venue) [Chunk P18_C03 | PDF page 18].*",
+    "reranked_answer": "Based on the retrieved passages, a mobile phone is generally **not allowed** in the playing venue during a game, subject to specific exceptions and rules:\n\n1. **For Players:**\n   * During a game, a player is forbidden to have any electronic device (including a mobile phone) in the playing venue unless it is specifically approved by the arbiter [Chunk P18_C02, PDF page 18; Chunk P18_C03, PDF page 18].\n   * *Exception:* Event regulations may allow such devices to be stored in a player's bag, provided the device is completely switched off, the bag is placed as agreed with the arbiter, and neither player uses the bag without the arbiter's permission [Chunk P18_C03, PDF page 18].\n   * *Penalty:* If it is evident that a player has such a device on their person in the playing venue, the player loses the game and the opponent wins (unless event regulations specify a different, less severe penalty) [Chunk P18_C03, PDF page 18].\n\n2. **For Anyone (General Use):**\n   * Unless authorised by the arbiter, it is forbidden for anybody to use a mobile phone or any communication device in the playing venue or any contiguous area designated by the arbiter [Chunk P20_C02, PDF page 20].",
+    "llm_baseline_s": 3.034694199974183,
+    "llm_reranked_s": 3.737860399996862
+  },
+  "Q23": {
+    "question": "Can a player claim a draw because of a repeated position with different moves?",
+    "category": "keyword_trap",
+    "critical_chunk_id": "P17_C01",
+    "evidence_reason": "Article 9.2.3 explains when positions count as identical, including side to move, possible moves, castling rights, and en passant.",
+    "model": "gemini-3.8-flash",
+    "baseline_chunk_ids": [
+      "P16_C03",
+      "P17_C02",
+      "P17_C03"
+    ],
+    "reranked_chunk_ids": [
+      "P17_C01",
+      "P16_C03",
+      "P17_C03"
+    ],
+    "baseline_answer": "Yes. Under Article 9.2, a player having the move can claim a draw when the same position is about to appear (or has appeared) for at least the third time, explicitly noting that this does **not necessarily** have to occur by a repetition of moves [Chunk P16_C03 | PDF page 16].\n\n**Constraints and requirements:**\n* **Player's turn:** The claim must be made by the player having the move [Chunk P16_C03 | PDF page 16].\n* **Intended move procedure:** If the position is about to appear, the player must first indicate the move (which cannot be changed) by writing it on the paper scoresheet or entering it on the electronic scoresheet, and declare to the arbiter their intention to make this move [Chunk P16_C03 | PDF page 16].\n* **Loss of right to claim:** If the player touches a piece as in Article 4.3, they lose the right to claim a draw under Article 9.2 on that move [Chunk P17_C02 | PDF page 17].\n* **Penalty for incorrect claim:** If the claim is found to be incorrect, the arbiter adds two minutes to the opponent's remaining thinking time, and the intended move must be played [Chunk P17_C02 | PDF page 17, Chunk P17_C03 | PDF page 17].\n\n*(Note: The retrieved passages cut off Article 9.2 after 9.2.1 and do not include the full text of Article 9.2.2 regarding claiming after the position has already appeared).*",
+    "reranked_answer": "Yes. Under the FIDE Laws of Chess, a player having the move can claim a draw when the same position appears for at least the third time, explicitly **\"not necessarily by a repetition of moves\"** [Chunk P16_C03 | PDF page 16].\n\n### Conditions and Constraints:\n* **Timing of the Claim:** The position must either:\n  * Be about to appear, if the player first records their intended (unchangeable) move on the scoresheet and declares their intention to make it to the arbiter [Chunk P16_C03 | PDF page 16], or\n  * Have just appeared, with the player claiming the draw having the move [Chunk P17_C01 | PDF page 17].\n* **Definition of the \"Same Position\":** Positions are the same if and only if:\n  * The same player has the move,\n  * Pieces of the same kind and colour occupy the same squares, and\n  * The possible moves of all pieces of both players are the same [Chunk P17_C01 | PDF page 17].\n* **Exceptions (Positions are *not* the same if):**\n  * A pawn could have been captured *en passant* at the start of the sequence [Chunk P17_C01 | PDF page 17].\n  * Castling rights existed previously with an unmoved rook, but were forfeited after moving (rights are lost only after the king or rook moves) [Chunk P17_C01 | PDF page 17].",
+    "llm_baseline_s": 4.890102099976502,
+    "llm_reranked_s": 5.178938900004141
+  }
+}

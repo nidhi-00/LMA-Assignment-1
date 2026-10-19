@@ -1,0 +1,12 @@
+# Windows CPU, installed inside an isolated Python virtual environment.
+ipykernel
+jupyter
+pymupdf
+sentence-transformers
+faiss-cpu
+numpy
+pandas
+matplotlib
+python-dotenv
+requests
+google-genai
