@@ -13,9 +13,9 @@ A retrieval-augmented generation (RAG) experiment comparing dense retrieval with
 
 | Retrieval stage | Median latency (CPU) |
 |---|---:|
-| Baseline retrieval | 14.23 ms |
-| Cross-Encoder scoring overhead | 593.17 ms |
-| Baseline + re-ranking | 607.13 ms |
+| Baseline retrieval | 11.52 ms |
+| Cross-Encoder scoring overhead | 477.59 ms |
+| Baseline + re-ranking | 488.65 ms |
 
 Measurements exclude document indexing, model loading, and Gemini API latency. Detailed rankings, answers, manual evaluations, and timing records are in [`results/`](results/). See [`report.pdf`](report.pdf) for the full analysis.
 

@@ -202,13 +202,13 @@
 
 | Stage | Median latency |
 |---|---:|
-| Baseline: query encoding and FAISS retrieval | 14.23 ms |
-| Additional Cross-Encoder scoring | 593.17 ms |
-| Advanced pipeline total | 607.13 ms |
+| Baseline: query encoding and FAISS retrieval | 11.52 ms |
+| Additional Cross-Encoder scoring | 477.59 ms |
+| Advanced pipeline total | 488.65 ms |
 
 ### Analysis
 
-- Advanced retrieval was approximately **42.7 times slower** than baseline retrieval.
+- Advanced retrieval was approximately **42.4 times slower** than baseline retrieval.
 - The comparison uses the median total times of both pipelines.
 - Most additional latency came from the Cross-Encoder.
 - It evaluated 10 query–passage pairs for each query.
